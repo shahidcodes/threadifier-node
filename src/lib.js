@@ -1,6 +1,6 @@
-let Worker, workerData;
+let Worker;
 try {
-  ({ Worker, workerData } = require('worker_threads'));
+  ({ Worker } = require('worker_threads'));
 } catch (err) {
   console.error(`worker_threads are not supported in your current node version ${process.version}.`);
   process.exit(-1);

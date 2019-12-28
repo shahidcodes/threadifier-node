@@ -1,8 +1,9 @@
 {
-  "name": "threadifier",
+  "name": "@shahidcodes/threadifier",
   "version": "1.0.0",
   "description": "A wrapper around node worker_thread with easy promise based api.",
   "main": "index.js",
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +24,14 @@
     "node": ">=12.14.0"
   },
   "repository": {
-    "url": "https://github.com/shahidcodes/threadifier-node"
-  }
+    "url": "git+https://github.com/shahidcodes/threadifier-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shahidcodes/threadifier-node/issues"
+  },
+  "homepage": "https://github.com/shahidcodes/threadifier-node#readme",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {}
 }
