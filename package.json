@@ -1,0 +1,28 @@
+{
+  "name": "threadifier",
+  "version": "1.0.0",
+  "description": "A wrapper around node worker_thread with easy promise based api.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "worker thread",
+    "threading",
+    "long running task",
+    "multi threading",
+    "web worker",
+    "parallel task"
+  ],
+  "author": "Shahid Kamal <me@shahidkamal.ml> (http://shahidkamal.ml/)",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  },
+  "engines": {
+    "node": ">=12.14.0"
+  },
+  "repository": {
+    "url": "https://github.com/shahidcodes/threadifier-node"
+  }
+}
