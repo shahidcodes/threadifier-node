@@ -25,7 +25,8 @@
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^1.19.1",
-    "prettier-eslint-cli": "^5.0.0"
+    "prettier-eslint-cli": "^5.0.0",
+    "@types/node": "^13.1.1"
   },
   "engines": {
     "node": ">=12.14.0"
@@ -40,5 +41,7 @@
   "directories": {
     "example": "examples"
   },
-  "dependencies": {}
+  "dependencies": {
+    "debug": "^4.1.1"
+  }
 }

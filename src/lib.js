@@ -9,6 +9,8 @@ try {
   process.exit(-1);
 }
 
+const WorkerPool = require('./pool');
+
 function fnWrapper(fn) {
   const runStr = `
     const { parentPort, workerData } = require('worker_threads');
@@ -19,7 +21,7 @@ function fnWrapper(fn) {
 }
 
 function run(fn, workerData) {
-  if (!Worker) return;
+  if (!Worker) return null;
   return new Promise((resolve, reject) => {
     const wrapped = fnWrapper(fn);
     const fnStr = wrapped.toString();
@@ -28,10 +30,10 @@ function run(fn, workerData) {
     worker.on('error', reject);
     worker.on('message', resolve);
     worker.on('exit', code => {
-      if (code != 0) reject(new Error('worker stopped with non-zero code.'));
+      if (code !== 0) reject(new Error('worker stopped with non-zero code.'));
     });
     worker.on('online', () => console.count('online'));
   });
 }
 
-module.exports = { run };
+module.exports = { run, WorkerPool };

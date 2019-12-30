@@ -14,7 +14,7 @@ Threadifier allows you to run any function in different thread seamlessly throug
 Run a function in different thread.
 
 ```javascript
-const Threadifier = require("@shahidcodes/threadifier");
+const Threadifier = require('@shahidcodes/threadifier');
 
 function runTask(arg) {
   let i = 0;
@@ -24,12 +24,16 @@ function runTask(arg) {
   return `worked- loop count ${i}, arg: ${JSON.stringify(arg)}`;
 }
 
-const args = { name: "Shahid" };
+const args = { name: 'Shahid' };
 
 Threadifier.run(runTask, args)
   .then(console.log)
   .catch(console.error);
 ```
+
+## Examples
+
+Please check the [examples](./examples) directory.
 
 ## Contribution
 
