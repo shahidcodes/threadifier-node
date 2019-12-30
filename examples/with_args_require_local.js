@@ -10,10 +10,8 @@ function runTask(arg) {
   return `worked- loop count ${i}, arg: ${JSON.stringify(arg)}`;
 }
 
-const args = { name: 'Shahid' }
+const args = { name: 'Shahid' };
 
 Threadifier.run(runTask, args)
   .then(console.log)
-  .catch(console.error)
-
-
+  .catch(console.error);

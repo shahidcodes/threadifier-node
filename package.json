@@ -18,7 +18,10 @@
   "author": "Shahid Kamal <me@shahidkamal.ml> (http://shahidkamal.ml/)",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
   },
   "engines": {
     "node": ">=12.14.0"
