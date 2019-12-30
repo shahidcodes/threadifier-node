@@ -6,13 +6,13 @@ function runTask(arg) {
   for (let index = 0; index < 99999999; index++) {
     i++;
   }
-  return `worked- loop count ${i}, arg: ${JSON.stringify(arg)}, ${moment().format('DD-MM-YYYY')}`;
+  return `worked- loop count ${i}, arg: ${JSON.stringify(
+    arg,
+  )}, ${moment().format('DD-MM-YYYY')}`;
 }
 
-const args = { name: 'Shahid' }
+const args = { name: 'Shahid' };
 
 Threadifier.run(runTask, args)
   .then(console.log)
-  .catch(console.error)
-
-
+  .catch(console.error);

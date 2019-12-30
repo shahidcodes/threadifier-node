@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 let Worker;
 try {
   ({ Worker } = require('worker_threads'));

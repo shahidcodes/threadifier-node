@@ -5,7 +5,8 @@
   "main": "index.js",
   "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier-eslint --write ($pwd).path/'{,!(node_modules)/**/}*.{js,jsx}'"
   },
   "keywords": [
     "worker thread",
@@ -19,9 +20,12 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "prettier-eslint-cli": "^5.0.0"
   },
   "engines": {
     "node": ">=12.14.0"
