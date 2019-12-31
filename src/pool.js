@@ -1,6 +1,7 @@
 /* eslint-disable no-plusplus */
 const { Worker } = require('worker_threads');
-const log = require('debug')('threadifier:main');
+
+const log = () => '';
 
 class WorkerPool {
   constructor(numberOfThreads) {
@@ -26,7 +27,7 @@ class WorkerPool {
       const workerId = this.getInactiveWorker();
       const task = {
         script: fn.toString(),
-        args,
+        args: { ...args, basePath: __dirname },
         callback: (e, r) => {
           if (e) reject(e);
           else resolve(r);

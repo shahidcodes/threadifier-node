@@ -1,6 +1,6 @@
 {
   "name": "@shahidcodes/threadifier",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A wrapper around node worker_thread with easy promise based api.",
   "main": "index.js",
   "private": false,
@@ -14,7 +14,9 @@
     "long running task",
     "multi threading",
     "web worker",
-    "parallel task"
+    "parallel task",
+    "thread pool",
+    "worker thread pool"
   ],
   "author": "Shahid Kamal <me@shahidkamal.ml> (http://shahidkamal.ml/)",
   "license": "ISC",
